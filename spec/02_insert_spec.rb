@@ -10,8 +10,8 @@ describe 'inserting' do
     expect(@db.execute("SELECT COUNT(*) FROM series;").flatten[0]).to eq(2)
   end
 
-  it "has 6 books" do
-    expect(@db.execute("SELECT COUNT(*) FROM books;").flatten[0]).to eq(6)
+  it "has 17 books" do
+    expect(@db.execute("SELECT COUNT(*) FROM books;").flatten[0]).to eq(17)
   end
 
   it "has 8 characters" do
